@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evalution_HTML</title>
+    <title>Evalution_HTMLcss</title>
     <link rel="stylesheet" href="style.css">
 
     <style>
@@ -36,6 +36,8 @@ body{
             height: 40px;
             background-color: rgb(224, 224, 224);
             border: solid 1px black;
+            box-shadow:0 5px 50px rgba(0, 0, 0, 0.30) ;
+
 
         }
 
@@ -45,6 +47,8 @@ body{
             height: 40px;
             background-color: rgb(224, 224, 224);
             border: solid 1px black;
+            box-shadow:0 5px 50px rgba(0, 0, 0, 0.30) ;
+
         }
 
         .rmecrit {
@@ -479,6 +483,7 @@ body{
 
         .SCD {
             position: absolute;
+            top: 955px;
             width: 1915px;
             height: 40px;
             background-color: #ffdee9;
@@ -487,9 +492,34 @@ body{
 
         .ecritSCD {
             position: absolute;
+            top: 948px;
             background-color: transparent;
 
         }
+        .tableau-style{
+            position: absolute;
+            top: 200px;
+            width: 1900px;
+            border-collapse: collapse;
+            box-shadow:0 5px 50px rgba(0, 0, 0, 0.30) ;
+            border: 0.px solid black;
+        }
+
+        th, td{
+            padding: 15px 20px;
+        }
+
+        tr, td, th {
+            border: 1px solid #ddd;
+        }
+        .img{
+            position: absolute;
+            margin-top: 10px;
+            margin-left:1600px;
+            box-shadow:0 5px 50px rgba(0, 0, 0, 0.30) ;
+
+        }
+       
     </style>
 
 
@@ -503,11 +533,12 @@ body{
 
 
 <body>
-    <img align="right" src="eco_energie.jpg" height="150" alt="Image économie d'énergie">
+    <header>
+    <img class="img" align="right" src="./image/eco_energie.jpg" height="150" alt="Image économie d'énergie">
 
     <div class="rm" style="left: 50px; top:78px;">
     </div>
-    <div class="rm2" style="left: 50px; top: 308px;px;">
+    <div class="rm2" style="left: 50px; top: 458px;">
     </div>
     <div class="rmecrit" style="left: 65px; top: 55px;">
         <u>
@@ -515,7 +546,7 @@ body{
         </u>
 
     </div>
-    <div class="rm2ecrit" style="left: 65px; top:285px;">
+    <div class="rm2ecrit" style="left: 65px; top:435px;">
         <U>
             <h5>2- Graphes des consommations</h5>
         </U>
@@ -605,7 +636,7 @@ body{
         <h5>100</h5>
     </div>
     <div class="val4" style="left: 600px; bottom: 130px;">
-        <h5>0</h5>
+        <h5>&ensp;0</h5>
     </div>
 
 
@@ -622,7 +653,7 @@ body{
         <h5>Avril</h5>
     </div>
     <div class="mai" style="left: 900px; bottom: 110px;">
-        <h5>Mai</h5>
+        <h5>&ensp;Mai</h5>
     </div>
     <div class="juin" style="left: 950px; bottom: 110px;">
         <h5>Juin</h5>
@@ -640,14 +671,14 @@ body{
         <h5>Oct</h5>
     </div>
     <div class="nov" style="left: 1200px; bottom: 110px;">
-        <h5>Nov</h5>
+        <h5>&ensp;Nov</h5>
     </div>
     <div class="dec" style="left: 1250px; bottom: 110px;">
-        <h5>Déc</h5>
+        <h5>&ensp;Déc</h5>
     </div>
     <div class="SCD" style="left: 1px; bottom: 1px;">
     </div>
-    <div class="ecritSCD" style="left: 780px; bottom: -8px;">
+    <div class="ecritSCD" style="left: 780px;">
     <h4>Suivi de mes consommations domestiques
     </h4>
     </div>
@@ -656,7 +687,8 @@ body{
 
 
 
-    <table border="0" width="100%">
+    <table class="tableau-style" border="0" width="100%">
+        
         <thead>
             <tr>
                 <th bgcolor=white>
@@ -721,7 +753,7 @@ body{
 
         </thead>
     </table>
-
+</header>
 </body>
 
 </html>
